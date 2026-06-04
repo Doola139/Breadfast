@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Breadfast RMS Helper v2",
+  "version": "2.0",
+  "description": "اختصارات Breadfast",
+  "permissions": ["clipboardWrite", "activeTab"],
+  "host_permissions": ["*://food-rms.breadfast.com/*", "*://*.breadfast.com/*"],
+  "content_scripts": [{
+    "matches": ["*://food-rms.breadfast.com/*", "*://*.breadfast.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_end"
+  }],
+  "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" }
+}
